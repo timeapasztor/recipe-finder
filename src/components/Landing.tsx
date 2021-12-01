@@ -70,7 +70,7 @@ const Landing: React.FC = () => {
     }, []);
 
     const loadRandomMeal = async () => {
-        let result = await Api.fetch(Url.randomMeal);
+        let result = await Api.fetchRandomMeal();
         const mealResult = result.meals[0];
         setRandomMeal(mealResult);
     };

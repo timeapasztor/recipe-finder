@@ -5,9 +5,10 @@ const { fontWeightEasy, fontWeightMedium } = fontWeightsCSS;
 const theme: any = getTheme();
 
 export const LandingCardWrapper = styled.div`
-    border: 1px solig lightgray;
+    border: 1px solid lightgray;
     position: relative;
     margin: 30px;
+    padding: 10px;
 `;
 
 export const LandingCardImage = styled.img<{ src: any }>`
@@ -16,8 +17,8 @@ export const LandingCardImage = styled.img<{ src: any }>`
     background-image: url(${(props) => props.src});
     border-radius: 4px;
     border: transparent;
-    width: 300px;
-    height: 300px;
+    max-width: 45%;
+    height: auto;
     object-fit: cover;
     margin: 0 30px 30px 0;
 `;

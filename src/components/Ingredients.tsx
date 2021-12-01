@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Ingredients = () => {
-    return <div>hello</div>;
+    return <div>INgredients</div>;
 };
 
 export default Ingredients;

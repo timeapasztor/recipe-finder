@@ -74,7 +74,6 @@ export const LandingCard: FC<LandingCardPropTypes> = ({
         if (ingredients.length) {
             ingredients.map((ingredient, index) => {
                 list.push(<li key={index}>{ingredient}</li>);
-                console.log('list', list);
             });
         }
         return <LandingCardIngredients>{list}</LandingCardIngredients>;
