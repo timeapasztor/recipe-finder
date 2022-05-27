@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Api from '../api/Api';
-import CategoryCard from './Cards/CategoryCard/CategoryCard';
+import Api from '../../api/Api';
+import CategoryCard from '../Cards/CategoryCard/CategoryCard';
+import { CategoriesContainer } from './Categories.css';
 
 type CategoryType = {
     idCategory: string;
@@ -36,7 +37,7 @@ const Categories: React.FC = () => {
         return helper;
     };
     console.log('categories', categories);
-    return <div>{categories.length > 0 && renderCategories()}</div>;
+    return <CategoriesContainer>{categories.length > 0 && renderCategories()}</CategoriesContainer>;
 };
 
 export default Categories;

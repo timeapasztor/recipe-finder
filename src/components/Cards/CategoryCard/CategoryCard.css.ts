@@ -5,13 +5,13 @@ const { fontWeightEasy, fontWeightMedium } = fontWeightsCSS;
 const theme: any = getTheme();
 
 export const CategoryCardWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     border: 1px solid lightgray;
-    position: relative;
     margin: 30px;
     padding: 10px;
     width: 25%;
     height: auto;
-    display: inline-block;
 `;
 
 export const CategoryCardImage = styled.img<{ src: any }>`
@@ -29,8 +29,7 @@ export const CategoryCardHeader = styled.div`
 `;
 
 export const CategoryCardTitle = styled.div`
-    display: flex;
-    justify-content: center;
+    align-self: center;
     height: auto;
     margin: 10px 0;
     font-weight: ${fontWeightMedium};

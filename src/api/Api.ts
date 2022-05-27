@@ -56,5 +56,6 @@ export const Url = {
     mealById: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772',
     mealByName: 'https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata',
     mealByCategory: 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood',
-    mealByArea: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian'
+    mealByArea: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian',
+    ingredientImage: 'https://www.themealdb.com/images/ingredients/'
 };
